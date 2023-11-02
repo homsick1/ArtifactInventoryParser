@@ -1,0 +1,30 @@
+https://steamcommunity.com/inventory/76561198418544078/730/2?l=english&count=5000
+Здесь не отображается положение стикеров
+total_inventory_count - общее количество предметов
+https://stackoverflow.com/questions/17393099/getting-someones-steam-inventory/17679641
+https://www.reddit.com/r/SteamBot/comments/394o9d/understanding_item_ids/
+
+"contextid":"2"\,"assetid":"(\d{10,11})"\,"classid":" - regex для assetid
+ "\,"classid":"(\d{9,10})"\,"instanceid":" - regex  для classid
+\{"appid":730\,"classid":"(\d{9,10})"\,"instanceid":" - regex для classid с описанием
+market_hash_name":"([\s\S]+?)" - regex имени
+
+Просмотр оружия CSGO
+steam://rungame/730/76561202255233023/+csgo_econ_action_previewS76561198418544078A18200721424D16620375323094678858
+Число после S - SteamID
+Число после A - AssetID
+Вместо S бывает M - Это MarketID для просмотра через торговую площадку
+
+https://steamcommunity.com/dev/registerkey - получение Steam Web API
+https://steamapi.xpaw.me/# - Steam Web API Documentation by xPaw
+https://developer.valvesoftware.com/wiki/List_of_CS:GO_Cvars - все команды CS:GO
+https://steamcommunity.com/dev
+
+http://steamcommunity.com/profiles/<PROFILEID>/inventory/json/<APPID>/<CONTEXTID>
+
+Источник <https://stackoverflow.com/questions/17393099/getting-someones-steam-inventory> 
+
+market_marketable_restriction (0 количество дней бана после покупки на продажу)
+market_tradable_restriction (7 количество дней бана после покупки на обмен, -1 - обмена нет)
+marketable (1 можно продать 0 нельзя продать )
+tradable (1 можно передать 0 - нельзя передать)
